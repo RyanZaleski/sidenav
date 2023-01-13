@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Sidebar</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="/styles.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+<!-- font flat-ui cdn 2.2.2 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.2.2/css/flat-ui.min.css"
+    integrity="sha512-PvB3Q4vTvWD/9aiiELYI3uebup/4mtou3Mc/uGudC/Zl+C9BdKUkAI+5jORfA+fvLK4DpzC5VyEN7P2kK43hjg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+        body {font-family: 'Poppins', sans-serif;}
+
+    </style>
+
+
+
+
+</head>
+
+<body class="bg-zinc-800">
+    
+    <aside class="flex flex-col pl-10 pt-20 w-fit ">
+
+        <div class="flex flex-row space-x-4 space-y-1">
+
+            <div>
+
+                <i class="text-zinc-600 fi fi-rr-angle-small-left relative top-1.5"></i>
+
+            </div>
+
+            <div>
+
+                <h1 class="text-gray-50  mb-8 tracking-wide font-medium text-2xl w-full pl-2 pr-12 rounded-md cursor-pointer">Settings</h1>
+
+            </div>
+
+        </div>
+
+        <ul class="flex flex-row space-x-4 space-y-1 cursor-pointer">
+
+            <div>
+
+                <i class="fi fi-rr-users text-zinc-400 relative top-1.5"></i>
+
+            </div>
+
+            <div>
+
+                <li id="accounts" class="text-zinc-500 mb-1 tracking-wider font-light w-full pl-2 pr-14 rounded-md hover:bg-zinc-700"><a class="hover:text-zinc-500">Account</a><i class="arrow-down arrowdown fi fi-rr-caret-right fi-rr-caret-down relative top-0.5 left-14 pl-1.5"></i></li>
+                <li class="hidden accountHiddenOne text-gray-100 tracking-wider font-light w-full pl-2 pr-12 py-px rounded-md hover:bg-zinc-700"><a class="hover:text-gray-100">Profile</a></li>
+                <li class="hidden accountHiddenTwo text-gray-100 tracking-wide font-light w-full pl-2 pr-12 py-px rounded-md hover:bg-zinc-700"><a class="hover:text-gray-100">Preferences</a></li>
+                <li class="hidden accountHiddenThree text-gray-100 tracking-wider font-light w-full pl-2 pr-12 py-px rounded-md hover:bg-zinc-700"><a class="hover:text-gray-100">Notifications</a></li>
+                <li class="hidden accountHiddenFour text-gray-100 tracking-wider font-light w-full pl-2 pr-12 py-px rounded-md hover:bg-zinc-700"><a class="hover:text-gray-100">API</a></li>
+            </div>
+
+        </ul>
+        <ul class="flex flex-row space-x-4 space-y-1 cursor-pointer">
+
+            <div>
+
+                <i class="fi fi-rr-building text-zinc-400 relative top-1.5"></i>
+
+            </div>
+
+            <div>
+
+                <li id="workspace" class="text-zinc-500 mb-1 tracking-wider font-light w-full pl-2 pr-9 rounded-md hover:bg-zinc-700"><a class="hover:text-zinc-500">Workspace</a><i class="fi fi-rr-caret-right fi-rr-caret-down relative top-0.5 left-9"></i></li>
+
+                <li class="hidden workspaceHidden text-gray-100 tracking-wider font-light w-full pl-2 pr-12 py-px rounded-md hover:bg-zinc-700"><a class="hover:text-gray-100">General</a></li>
+
+                <li class="hidden workspaceHiddenOne text-gray-100 tracking-wider font-light w-full pl-2 pr-12 py-px rounded-md hover:bg-zinc-700"><a class="hover:text-gray-100">People</a></li>
+
+                <li class="hidden workspaceHiddenTwo text-gray-100 tracking-wider font-light w-full pl-2 pr-12 py-px rounded-md hover:bg-zinc-700"><a class="hover:text-gray-100">Plans</a></li>
+                
+                <li class="hidden workspaceHiddenThree text-gray-100 tracking-wider font-light w-full pl-2 pr-12 py-px rounded-md hover:bg-zinc-700"><a class="hover:text-gray-100">Integrations</a></li>
+
+                <li class="hidden workspaceHiddenFour text-gray-100 tracking-wider font-light w-full pl-2 pr-12 py-px rounded-md hover:bg-zinc-700"><a class="hover:text-gray-100">Import / Export</a></li>
+
+            </div>
+
+        </ul>
+
+        <ul class="flex flex-row space-x-4 space-y-1 cursor-pointer">
+
+        <div>
+
+            <i class="fi fi-rr-users-alt text-zinc-400 relative top-1.5"></i>
+
+        </div>
+
+        <div>
+
+            <li id="teams" class="text-zinc-500 mb-1 tracking-wider font-light w-full pl-2 pr-20 rounded-md hover:bg-zinc-700"><a class="hover:text-zinc-500">Teams</a><i class="fi fi-rr-caret-right fi-rr-caret-down relative top-0.5 left-20"></i></li>
+
+            <li class="hidden teamsHidden text-gray-100 tracking-wider font-light w-full pl-2 pr-12 py-px rounded-md hover:bg-zinc-700"><a class="hover:text-gray-100">Add team</a><i class="fi fi-rr-plus-small relative top-0.5 left-1 text-zinc-500"></i></li>
+
+            </div>
+
+        </ul>
+        
+    </aside>
+
+<script src="/js.js"></script>
+
+</body>
+
+</html>
